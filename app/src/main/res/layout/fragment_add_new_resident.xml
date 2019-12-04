@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".AddNewResidentFragment">
+
+
+    <TextView
+        android:id="@+id/addNewBook_txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:text="Add New Resident"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/backToMainFragmentBTN_FANR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="#ffffff"
+            android:text="> Back"
+            android:textColor="#F50057"
+            android:textSize="20sp" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/saveBTN"
+            android:layout_width="wrap_content"
+            app:rippleColor="#000000"
+            android:outlineAmbientShadowColor="#ffffff"
+            android:outlineSpotShadowColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_save_black_24dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/previousResidentBTN_FANR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff0ff"
+            android:textAllCaps="false"
+            android:text="Previous"
+            android:textColor="#FF3D00"
+            android:textSize="20dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/nextResidentBTN_FANR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#fff0ff"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="#FF3D00"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:background="#302F2F">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:padding="25dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/mobile_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/room_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Room"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/address_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/nationalNumber_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="National Number"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/birthdate_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Birthdate"
+                android:inputType="date" />
+            <EditText
+                android:id="@+id/mail_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mail"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/parentMobile_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Parent Mobile"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/college_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="College"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/university_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="University"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/collegeYear_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CollegeYear"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/checkIn_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Check In"
+                android:inputType="date" />
+            <EditText
+                android:id="@+id/checkout_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Check Out"
+                android:inputType="date" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="50dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
